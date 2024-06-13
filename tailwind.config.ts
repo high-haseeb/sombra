@@ -5,21 +5,21 @@ const config: Config = {
   theme: {
     extend: {
       keyframes: {
-        merge: {
-          "0%": { transform: "translateX(-100%)", opacity: "0" },
-          "80%": { transform: "translateX(0)", opacity: "1" },
-          "100%": { transform: "translateX(10%)", opacity: "0" },
+        gradientIn: {
+          "0%": { transform: "translateX(-100vw)",width:'100%', opacity: '0' },
+          "80%": { transform: "", width:'50%',opacity: '1' },
+          "100%": { transform: "translateX(-40vw)",width:'10%', opacity: '0' },
         },
-        mergeRight: {
-          "0%": { transform: "translateX(100%)", opacity: "0" },
-          "80%": { transform: "translateX(0)", opacity: "1" },
-          "100%": { transform: "translateX(-10%)", opacity: "0" },
+        gradientInRight: {
+          "0%": { transform: "translateX(100vw)",width:'100%', opacity: '0' },
+          "80%": { transform: "", width:'50%',opacity: '1' },
+          "100%": { transform: "translateX(40vw)",width:'10%', opacity: '0' },
         },
       },
-      animation: {
-        "merge-left": "merge 2s ease-in-out forwards",
-        "merge-right": "mergeRight 2s ease-in-out forwards",
-      },
+    },
+    animation: {
+      "gradient-in-left": "gradientIn 5s ease-in-out infinite",
+      "gradient-in-right": "gradientInRight 5s ease-in-out infinite",
     },
   },
   plugins: [],
