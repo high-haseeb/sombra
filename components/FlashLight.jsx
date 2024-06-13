@@ -25,7 +25,7 @@ const FlashLight = () => {
             <div
               className="pointer-events-none absolute inset-0 transition-opacity duration-200"
               style={{
-                background: `radial-gradient(circle at ${mousePosition.x}px ${mousePosition.y}px, transparent, rgba(0, 0, 0, 0.8), black ${flashOn ? "20%" : "0%"})`,
+                background: `radial-gradient(circle at ${mousePosition.x}px ${mousePosition.y}px, transparent, rgba(0, 0, 0, 0.8), black ${flashOn ? "14%" : "0%"})`,
               }}
             />
           </div>
