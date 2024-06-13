@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import localFont from 'next/font/local'
+import localFont from "next/font/local";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -7,7 +7,10 @@ export const metadata: Metadata = {
   description: "made by high-haseeb",
 };
 
-const turret = localFont({src:'./../public/fonts/TurretRoad-Regular.ttf'})
+const turret = localFont({ src: [
+  { path: "./../public/fonts/TurretRoad-Regular.ttf", style: "normal", weight: '400' },
+  { path: "./../public/fonts/TurretRoad-Bold.ttf", style: "normal", weight: '700' },
+] });
 
 export default function RootLayout({
   children,

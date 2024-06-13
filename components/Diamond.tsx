@@ -43,7 +43,7 @@ const Diamond = () => {
             ref={vidRef}
           />
 
-        <div className={ `${introDone ? 'text-black':'text-white'} transition-color uppercase z-10` }>
+        <div className={ `${introDone ? 'text-black':'text-white'} transition-color uppercase z-10 font-bold` }>
           <div className="absolute top-40 right-32 text-4xl">Actualizing the beyond</div>
           <div className="absolute bottom-40 left-32 text-4xl">
             ILLUMINATING THE <br /> UNKNOWN
@@ -52,7 +52,7 @@ const Diamond = () => {
         <Image
           className="cursor-pointer z-10"
           src={`/gifs/${diamond_paths[index]}.gif`}
-          width={500}
+          width={200}
           height={500}
           alt="diamond"
           onClick={() => {
