@@ -18,7 +18,6 @@ const Diamond = () => {
   const { setIntroDone, toggleFlash, introDone } = useStateStore();
   const vidRef = useRef<any>(null);
   useEffect(() => {
-    console.log(vidRef.current)
     if (!vidRef.current) return;
     vidRef.current?.addEventListener("ended", () => {
       console.log('video ended')
@@ -43,6 +42,13 @@ const Diamond = () => {
             className={ `absolute top-0 left-0 w-screen h-screen z-40 object-cover ${introDone ?  'block' :'hidden'}` }
             ref={vidRef}
           />
+
+        <div className="text-black uppercase">
+          <div className="absolute top-40 right-32 text-4xl">Actualizing the beyond</div>
+          <div className="absolute bottom-40 left-32 text-4xl">
+            ILLUMINATING THE <br /> UNKNOWN
+          </div>
+        </div>
         <Image
           className="cursor-pointer z-10"
           src={`/gifs/${diamond_paths[index]}.gif`}
