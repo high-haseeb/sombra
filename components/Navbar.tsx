@@ -10,9 +10,9 @@ const Navbar = () => {
           <Image src={"/logo.png"} width={180} height={40} alt="checkbox" />
         </span>
         <div className="flex flex-col gap-2 absolute right-10 top-10 invert">
-          <Image src={"/icons/box.svg"} width={20} height={40} alt="checkbox" />
-          <Image src={"/icons/box.svg"} width={20} height={40} alt="checkbox" />
-          <Image src={"/icons/box.svg"} width={20} height={40} alt="checkbox" />
+          <Image src={"/icons/box.svg"} width={10} height={40} alt="checkbox" />
+          <Image src={"/icons/box.svg"} width={10} height={40} alt="checkbox" />
+          <Image src={"/icons/box.svg"} width={10} height={40} alt="checkbox" />
         </div>
         <div className="uppercase text-xl absolute -left-20 top-1/2 -rotate-90">bringing dark to light</div>
         <div className="uppercase text-sm font-normal absolute left-10 bottom-10">Copyright (c) 2024 Sombra. All Rights Reserved.</div>
