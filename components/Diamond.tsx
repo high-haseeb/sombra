@@ -43,7 +43,7 @@ const Diamond = () => {
             ref={vidRef}
           />
 
-        <div className="text-black uppercase">
+        <div className={ `${introDone ? 'text-black':'text-white'} transition-color uppercase z-10` }>
           <div className="absolute top-40 right-32 text-4xl">Actualizing the beyond</div>
           <div className="absolute bottom-40 left-32 text-4xl">
             ILLUMINATING THE <br /> UNKNOWN
