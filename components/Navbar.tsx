@@ -7,9 +7,7 @@ const Navbar = () => {
     <div className="fixed top-0 w-screen h-screen left-0 z-50 mix-blend-difference text-4xl font-bold leading-8 pointer-events-none">
       <div className="relative w-full h-full">
         <span className="absolute top-10 left-10 font-sans">
-          Sombra
-          <br />
-          Labs
+          <Image src={"/logo.png"} width={180} height={40} alt="checkbox" />
         </span>
         <div className="flex flex-col gap-2 absolute right-10 top-10 invert">
           <Image src={"/icons/box.svg"} width={20} height={40} alt="checkbox" />
