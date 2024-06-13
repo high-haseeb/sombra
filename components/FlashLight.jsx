@@ -21,11 +21,11 @@ const FlashLight = () => {
     <>
       {!introDone && (
         <div className="w-screen h-screen absolute top-0 left-0 pointer-events-none" onClick={() => setLightOn((state) => !state)}>
-          <div className="relative w-full h-screen bg-white/10 z-20">
+          <div className="relative w-full h-screen bg-white/50 z-20">
             <div
               className="pointer-events-none absolute inset-0 transition-opacity duration-200"
               style={{
-                background: `radial-gradient(circle at ${mousePosition.x}px ${mousePosition.y}px, transparent, rgba(0, 0, 0, 0.8), black ${flashOn ? "30%" : "0%"})`,
+                background: `radial-gradient(circle at ${mousePosition.x}px ${mousePosition.y}px, transparent, rgba(0, 0, 0, 0.8), black ${flashOn ? "20%" : "0%"})`,
               }}
             />
           </div>
