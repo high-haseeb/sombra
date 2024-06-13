@@ -37,8 +37,8 @@ const Diamond = () => {
         
           <video
             src="/bg.mp4"
-            width={window.innerWidth}
-            height={window.innerHeight}
+            width={1000}
+            height={1000}
             autoPlay
             className={ `absolute top-0 left-0 w-screen h-screen z-40 object-cover ${introDone ?  'block' :'hidden'}` }
             ref={vidRef}
