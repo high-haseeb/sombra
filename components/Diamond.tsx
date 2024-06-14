@@ -29,9 +29,9 @@ const Diamond = () => {
       vidRef.current && (vidRef.current.style.display = "none");
     });
   }, [vidRef.current]);
-  // useEffect(() => {
-  //   vidRef.current.play();
-  // }, [introDone])
+  useEffect(() => {
+    vidRef.current.play();
+  }, [introDone])
   return (
     <>
       <div
