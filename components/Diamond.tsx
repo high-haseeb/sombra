@@ -24,6 +24,9 @@ const Diamond = () => {
       vidRef.current && (vidRef.current.style.display = "none");
     });
   }, [vidRef.current]);
+  useEffect(() => {
+    vidRef.current.play();
+  }, [introDone])
   return (
     <>
       <div
@@ -33,12 +36,12 @@ const Diamond = () => {
           setIndex((state) => (state + 1) % diamond_paths.length);
         }}
       >
-        
           <video
             src="/bg.mp4"
             width={1000}
             height={1000}
-            autoPlay
+          autoPlay
+          playsInline
             className={ `absolute top-0 left-0 w-screen h-screen z-40 object-cover ${introDone ?  'block' :'hidden'}` }
             ref={vidRef}
           />
