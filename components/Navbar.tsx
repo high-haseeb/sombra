@@ -5,7 +5,7 @@ import React from "react";
 const Navbar = () => {
   return (
     <div className="fixed top-0 w-screen h-screen left-0 z-50 mix-blend-difference text-4xl font-bold leading-8 pointer-events-none">
-      <div className="relative w-full h-full">
+      <div className="relative w-full h-full text-white">
         <span className="absolute top-10 left-10 font-sans">
           <Image src={"/logo.png"} width={180} height={40} alt="checkbox" />
         </span>

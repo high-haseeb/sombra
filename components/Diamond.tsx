@@ -20,7 +20,6 @@ const Diamond = () => {
   useEffect(() => {
     if (!vidRef.current) return;
     vidRef.current?.addEventListener("ended", () => {
-      console.log('video ended')
       vidRef.current && (vidRef.current.style.display = "none");
     });
   }, [vidRef.current]);
